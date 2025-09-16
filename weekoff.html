@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekoff Entry Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-6">
+    <h2 class="text-2xl font-bold text-center mb-6 text-gray-700">Weekoff Entry Form</h2>
+    <form class="space-y-4">
+      <!-- Employee Name -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Employee Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"
+          class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+      </div>
+
+      <!-- Employee ID -->
+      <div>
+        <label for="empId" class="block text-sm font-medium text-gray-600 mb-1">Employee ID</label>
+        <input type="text" id="empId" name="empId" placeholder="Enter your employee ID"
+          class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+      </div>
+
+      <!-- Department -->
+      <div>
+        <label for="department" class="block text-sm font-medium text-gray-600 mb-1">Department</label>
+        <select id="department" name="department"
+          class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+          <option value="">Select department</option>
+          <option>HR</option>
+          <option>IT</option>
+          <option>Finance</option>
+          <option>Operations</option>
+          <option>Sales</option>
+        </select>
+      </div>
+
+      <!-- Weekoff Day -->
+      <div>
+        <label for="weekoff" class="block text-sm font-medium text-gray-600 mb-1">Weekoff Day</label>
+        <select id="weekoff" name="weekoff"
+          class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+          <option value="">Select a day</option>
+          <option>Sunday</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+        </select>
+      </div>
+
+      <!-- Date Range -->
+      <div>
+        <label for="date" class="block text-sm font-medium text-gray-600 mb-1">Effective Date</label>
+        <input type="date" id="date" name="date"
+          class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+        Submit
+      </button>
+    </form>
+  </div>
+</body>
+</html>
